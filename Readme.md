@@ -9,30 +9,29 @@
 (config)#hostname <hostname> 
 ```
 
-	
-
+**CONFIGURAR UM BANNER**	
+```
 >enable
 #configure terminal 
 (config)#banner motd "texto"
 
 EX: (config)#banner motd "Acesso apenas para o Departamento de TI" 
+```  
   
-  
 
 
-#CONFIGURAR SENHA NA CONSOLE 
-
+**CONFIGURAR SENHA NA CONSOLE**
+```
 
 >enable
 #configure terminal
 (config)#line console 0
 (config-line)#password <senha>
 (config-line)#login (NÃO ESQUECER O LOGIN, CASO CONTRÁRIO A SENHA NÃO SERÁ HABILITADA) 
-
+``` 
 
   
-  
-!CONFIGURAR SENHA NA ENABLE 
+CONFIGURAR SENHA NA ENABLE
 
 
 >enable
