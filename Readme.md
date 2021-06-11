@@ -2,12 +2,12 @@
 
 
 
-# TROCAR HOSTNAME DOS ESQUIPAMENTOS
-
+**TROCAR HOSTNAME DOS ESQUIPAMENTOS**
+```
 >enable
 #configure terminal 
 (config)#hostname <hostname> 
-
+```
 
 	
 
