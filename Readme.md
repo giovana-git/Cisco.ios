@@ -166,7 +166,14 @@ EX - (config)#username Giovana privilege 15 secret Senha*Segura
 (config-line)#login local 
 ```
 
-
+**Configurar as VTY para usar TELNET**
+```
+>enable
+#configure terminal
+(config)#line vty 0 15
+(config-line)#password <senha>
+(config-line)#login
+```
 
   
   
