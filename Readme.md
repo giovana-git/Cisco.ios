@@ -2,16 +2,14 @@
 
 
 
-!TROCAR HOSTNAME DOS ESQUIPAMENTOS
+# TROCAR HOSTNAME DOS ESQUIPAMENTOS
 
 >enable
 #configure terminal 
 (config)#hostname <hostname> 
 
-  
-  
-  
-!CONFIGURAR UM BANNER
+
+	
 
 >enable
 #configure terminal 
@@ -22,7 +20,7 @@ EX: (config)#banner motd "Acesso apenas para o Departamento de TI"
   
 
 
-!CONFIGURAR SENHA NA CONSOLE 
+#CONFIGURAR SENHA NA CONSOLE 
 
 
 >enable
