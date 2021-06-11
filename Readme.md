@@ -100,35 +100,29 @@ ou
 #copy running-config startup-config 
 ```
 
-
-!RESETAR EQUIPAMENTO 
-
+**RESETAR EQUIPAMENTO** 
+```
 >enable 
 #write erase 
+```
 
 
-
-!CONFIGURAR IP NA INTERFACE 
-
-
+**CONFIGURAR IP NA INTERFACE** 
+```
 >enable
 #configure terminal
 (config)#interface <nome-da-interface> 
 (config)#ip address <ip> + <máscara-de-subrede-em-decimal> 
+```
 
 
-
-	
-
-	
-	
-!COLOCAR DESCRIÇÃO EM UMA INTERFACE 
-
+**COLOCAR DESCRIÇÃO EM UMA INTERFACE** 
+```
 >enable 
 #configure terminal 
 (config)#interface <nome> 
 (config-if)#description <descrição> 
-  
+```
   
   
   
