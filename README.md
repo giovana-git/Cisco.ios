@@ -118,6 +118,11 @@ ou
 (config)#ip address <ip> + <máscara-de-subrede-em-decimal> 
 
 
+
+	
+
+	
+	
 !COLOCAR DESCRIÇÃO EM UMA INTERFACE 
 
 >enable 
