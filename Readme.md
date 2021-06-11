@@ -31,48 +31,48 @@ EX: (config)#banner motd "Acesso apenas para o Departamento de TI"
 ``` 
 
   
-CONFIGURAR SENHA NA ENABLE
-
-
+**CONFIGURAR SENHA NA ENABLE**
+```
 >enable
 #configure terminal 
 (config)#enable secret (UTILIZAR SECRET POIS VEM CRIPTOGRAFADA) 
+ ``` 
   
-  
 
 
   
-!VERIFICAR AS CONFIGURAÇÕES QUE ESTÃO RODANDO NO EQUIPAMENTO 
-
-
+**VERIFICAR AS CONFIGURAÇÕES QUE ESTÃO RODANDO NO EQUIPAMENTO** 
+```
 >enable 
 #show running-config 
+```
 
 
-!HABILITAR SERVIÇO DE CRIPTOGRAFIA 
-
+**HABILITAR SERVIÇO DE CRIPTOGRAFIA** 
+```
 >enable
 #configure terminal
 (config)#service password-encryption 
+```
 
-
-!DESFAZER UM COMANDO NO IOS 
-
+**DESFAZER UM COMANDO NO IOS** 
+```
 Digitar NO antes do comando!!! 
+```
 
-
-!DESATIVAR UMA INTERFACE 
-
+**DESATIVAR UMA INTERFACE** 
+```
 >enable
 #configure terminal
 (config)#interface <nomenclatura-da-interface>
 (config-if)#shutdown 
 
 EX: (config)#interface g0/0 
+```
 
 
-!DESATIVAR/ATIVAR VÁRIAS INTERFACES DE UMA VEZ 
-
+**DESATIVAR/ATIVAR VÁRIAS INTERFACES DE UMA VEZ**  
+```
 >enable
 #configure terminal
 (config)#interface range <intervalo> 
@@ -82,21 +82,23 @@ EX:
 #configure terminal
 (config)#interface range g0/0-2 
 (config-if-range)#shutdown 
+```
 
 
 
-!VER RESUMO DAS INTERFACES 
-
+**VER RESUMO DAS INTERFACES** 
+```
 >enable
 #show ip interface brief 
+```
 
-
-!SALVAR CONFIGURAÇÕES 
-
+**SALVAR CONFIGURAÇÕES** 
+```
 >enable
 #write memory 
 ou 
 #copy running-config startup-config 
+```
 
 
 !RESETAR EQUIPAMENTO 
