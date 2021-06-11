@@ -123,8 +123,51 @@ ou
 (config)#interface <nome> 
 (config-if)#description <descrição> 
 ```
-  
-  
+ 
+# SSH 
+
+**DEFINIR NOME DE DOMÍNIO**
+```
+>enable 
+#configure terminal 
+(config)#ip domain-name <nome-de-domínio> 
+```
+
+**GERAR CHAVE DE CRIPTOGRAFIA** 
+```
+>enable 
+#configure terminal 
+(config)#crypto key generate rsa general-keys modulus <tamanho-de-bits> <360-4000> 
+``` 
+
+**CRIAR USUÁRIOS** 
+```
+>enable 
+#configure terminal 
+(config)#username <usuário> privilege <privilégio> secret <senha-do-usuário> 
+
+EX - (config)#username Giovana privilege 15 secret Senha*Segura 
+```
+
+**ATIVAR SSH NAS LINHAS DE VTY** 
+```
+>enable 
+#configure terminal 
+(config)#line vty 0 15 
+(config-line)#transport input ssh 
+(config-line)#login local 
+```
+
+**ATIVAR LOGIN LOCAL NA CONSOLE** 
+```
+>enable 
+#configure terminal 
+(config)#line console 0 
+(config-line)#login local 
+```
+
+
+
   
   
   
