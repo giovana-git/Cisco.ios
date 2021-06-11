@@ -8,6 +8,9 @@
 #configure terminal 
 (config)#hostname <hostname> 
 
+  
+  
+  
 !CONFIGURAR UM BANNER
 
 >enable
@@ -15,6 +18,8 @@
 (config)#banner motd "texto"
 
 EX: (config)#banner motd "Acesso apenas para o Departamento de TI" 
+  
+  
 
 
 !CONFIGURAR SENHA NA CONSOLE 
@@ -27,14 +32,19 @@ EX: (config)#banner motd "Acesso apenas para o Departamento de TI"
 (config-line)#login (NÃO ESQUECER O LOGIN, CASO CONTRÁRIO A SENHA NÃO SERÁ HABILITADA) 
 
 
+  
+  
 !CONFIGURAR SENHA NA ENABLE 
 
 
 >enable
 #configure terminal 
 (config)#enable secret (UTILIZAR SECRET POIS VEM CRIPTOGRAFADA) 
+  
+  
 
 
+  
 !VERIFICAR AS CONFIGURAÇÕES QUE ESTÃO RODANDO NO EQUIPAMENTO 
 
 
