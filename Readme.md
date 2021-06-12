@@ -207,6 +207,51 @@ S* = ROTA PADRÃO
 ```
 
 
+**CONFIGURAR UMA ROTÁ ESTÁTICA (IPv4)** 
+```
+>enable
+#configure terminal 
+(config)#ip route <id-da-rede-de-destino> + <máscara-da-rede-de-destino> <ip-do-roteador-que-conhece-a-rede> 
+
+EX - (config)#ip route 192.168.0.10> + 255.255.255.128 + 200.200.100.2
+```
+
+**CONFIGURAR UMA ROTA PADRÃO (IPv4)** 
+```
+>enable
+#configure terminal 
+(config)#ip route 0.0.0.0 0.0.0.0 <nome-da-interface-de-saída> 
+
+EX - (config)#ip route 0.0.0.0 0.0.0.0 s0/0/0 
+```
+
+
+**ATIVAR O ROTEAMENTO IPv6** 
+```
+>enable
+#configure terminal 
+(config)#ipv6 unicast-routing 
+```
+
+
+**INSERIR IPv6 EM UMA INTERFACE** 
+```
+>enable
+#configure terminal 
+(config)#interface <nome-da-interface>
+(config-if)#ipv6 address <endereço>/<prefixo> 
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
