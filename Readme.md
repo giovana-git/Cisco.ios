@@ -175,6 +175,52 @@ EX - (config)#username Giovana privilege 15 secret Senha*Segura
 (config-line)#login
 ```
 
-  
-  
+
+
+# CONFIGURAÇÕES EXCLUSIVAS PARA O ROTEADOR 
+
+**VISUALIZAR TABELA DE ROTEAMENTO** 
+```
+>enable 
+#show ip route 
+
+LEGENDAS DA TABELA: 
+C = REDE QUE ELE ESTÁ CONECTADO 
+L = ENDEREÇO QUE ELE ESTÁ USANDO NA REDE 
+/32 = IP DE UM HOST
+S = ROTA ESTÁTICA 
+S* = ROTA PADRÃO 
+```
+
+**CONFIGURAR SUBINTERFACES** 
+```
+>enable
+#configure terminal 
+(config)#interface <nome-da-subinterface> 
+
+  EX - (config)#interface g0/0.10 
+  10 = NÚMERO DA VLAN ATRELADA 
+
+(config)#interface <nome-da-subinterface>
+(config-subif)#encapsulation dot1q <número-da-vlan> 
+(config-subif)#ip address <ip> + <máscara> 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
