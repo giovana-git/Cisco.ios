@@ -213,7 +213,7 @@ S* = ROTA PADRÃO
 #configure terminal 
 (config)#ip route <id-da-rede-de-destino> + <máscara-da-rede-de-destino> <ip-do-roteador-que-conhece-a-rede> 
 
-EX - (config)#ip route 192.168.0.10> + 255.255.255.128 + 200.200.100.2
+EX - (config)#ip route 192.168.0.10 255.255.255.128 200.200.100.2
 ```
 
 **CONFIGURAR UMA ROTA PADRÃO (IPv4)** 
