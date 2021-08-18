@@ -1,5 +1,4 @@
-# Comandos gerais Cisco IOS 
-
+# Comandos gerais Cisco IOS (Switches e Routers)
 
 
 **TROCAR HOSTNAME DOS ESQUIPAMENTOS**
@@ -243,9 +242,67 @@ EX - (config)#ip route 0.0.0.0 0.0.0.0 s0/0/0
 ```
 
 
+# Configurações exclusivas do Switch
 
 
+**CRIAR VLANS**
+```
+>enable
+#configure terminal
+(config)#vlan [número-da-vlan]
+```
 
+**NOMEAR A VLAN**
+```
+>enable
+#configure terminal
+(config)#vlan 10
+(config-vlan)# name [nome-da-vlan]
+```
+
+**COLOCAR INTERFACE EM UMA VLAN (ACCESS)**
+```
+>enable
+#configure terminal
+(config)#interface [nome-dainterface]
+(config-if)# switchport mode access
+(config-if)# switchport access vlan [nº-da-vlan]
+```
+
+
+**VERIFICAR VLANS DO EQUIPAMENTO**
+```
+>enable
+#show vlan brief
+```
+
+
+**CONFIGURAR UMA INTERFACE PARA O MODO TRUNK**
+```
+>enable
+#configure terminal
+(config)#interface [nome-dainterface]
+(config-if)# switchport mode trunk
+```
+
+**CONFIGURAR A VLAN NATIVA NA INTERFACE TRUNK**
+```
+>enable
+#configure terminal
+(config)#interface [nome-dainterface]
+(config-if)# switchport mode trunk
+(config-if)# switchport trunk native vlan [nº-da-vlan-nativa]
+```
+
+**LIBERAR VLANS NA INTERFACE TRUNK**
+```
+>enable
+#configure terminal
+(config)#interface [nome-dainterface]
+(config-if)# switchport trunk allowed vlan [lista das vlans separadas por vírgulas]
+
+EX: (config-if)# switchport trunk allowed vlan 10,20,30
+```
 
 
 
