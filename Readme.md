@@ -304,9 +304,13 @@ EX - (config)#ip route 0.0.0.0 0.0.0.0 s0/0/0
 EX: (config-if)# switchport trunk allowed vlan 10,20,30
 ```
 
-
-
-
+**CONFIGURAR IP NO SWITCH**
+```
+>enable
+#configure terminal
+(config)# interface vlan [nº-da-vlan]
+(config)#ip address <ip> + <máscara-de-subrede-em-decimal> 
+```
 
 
 
